@@ -54,10 +54,18 @@ def putRequest():
     pass
 
 
-def deleteRequest():
+def deleteRequest(method, filepath, version):
     """
     DELETE request handler
     """
+    if method == "DELETE":
+        if my_file.exists(filepath):
+            os.remove(filepath)
+            code = 200
+            return version code phrase
+        else:
+            code = 204
+            return version code phrase
     pass
 
 
