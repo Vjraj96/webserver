@@ -66,7 +66,7 @@ def deleteRequest(method, filepath, version):
         else:
             code = 204
             return version code phrase
-    pass
+   
 
 
 def getResponse(method, headers, body):
